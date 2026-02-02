@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    margin: 40px auto;
+}
+
+.balloon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #34C759;
+    border-radius: 50% 50% 0 50%;
+    transform: rotate(45deg);
+    animation: move 5s infinite;
+}
+
+@keyframes move {
+    0% { top: 10%; left: 10%; }
+    25% { top: 20%; left: 50%; }
+    50% { top: 50%; left: 80%; }
+    75% { top: 80%; left: 50%; }
+    100% { top: 10%; left: 10%; }
+}
+
+button {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#yes-btn {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+#no-btn {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.msg {
+    margin-top: 50px;
+}
